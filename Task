@@ -1,0 +1,24 @@
+frees@Prasanth:~$ mkdir my_folder
+frees@Prasanth:~$ cd my_folder
+frees@Prasanth:~/my_folder$ vim my_file.txt
+frees@Prasanth:~/my_folder$ vim another_file.txt
+frees@Prasanth:~/my_folder$ cat my_file.txt >> another_file.txt
+frees@Prasanth:~/my_folder$ vim another_file.txt
+frees@Prasanth:~/my_folder$ vim my_file.txt
+frees@Prasanth:~/my_folder$ cat my_file.txt >> another_file.txt
+frees@Prasanth:~/my_folder$ touch file{1..20}.txt
+frees@Prasanth:~/my_folder$ ls
+another_file.txt  file10.txt  file12.txt  file14.txt  file16.txt  file18.txt  file2.txt   file3.txt  file5.txt  file7.txt  file9.txt
+file1.txt         file11.txt  file13.txt  file15.txt  file17.txt  file19.txt  file20.txt  file4.txt  file6.txt  file8.txt  my_file.txt
+frees@Prasanth:~/my_folder$ for i in {1..5}; do mv file$i.txt file$i.yml; done
+frees@Prasanth:~/my_folder$ ls
+another_file.txt  file10.txt  file12.txt  file14.txt  file16.txt  file18.txt  file2.yml   file3.yml  file5.yml  file7.txt  file9.txt
+file1.yml         file11.txt  file13.txt  file15.txt  file17.txt  file19.txt  file20.txt  file4.yml  file6.txt  file8.txt  my_file.txt
+frees@Prasanth:~/my_folder$ ls -t | head -n 5
+file1.yml
+file10.txt
+file11.txt
+file12.txt
+file13.txt
+frees@Prasanth:~/my_folder$
+
