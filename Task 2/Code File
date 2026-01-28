@@ -1,0 +1,6 @@
+frees@Prasanth:~$ touch file.txt
+frees@Prasanth:~$ chmod 764 file.txt
+frees@Prasanth:~$ ls -l file.txt
+-rwxrw-r-- 1 frees frees 0 Jan 28 09:17 file.txt
+frees@Prasanth:~$
+
