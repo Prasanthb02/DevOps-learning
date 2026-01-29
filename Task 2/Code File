@@ -1,6 +1,20 @@
-frees@Prasanth:~$ touch file.txt
-frees@Prasanth:~$ chmod 764 file.txt
-frees@Prasanth:~$ ls -l file.txt
--rwxrw-r-- 1 frees frees 0 Jan 28 09:17 file.txt
+frees@Prasanth:~$ sudo touch /home/demo.txt
+[sudo] password for frees:
+frees@Prasanth:~$ ls
+file.txt  my_folder
+frees@Prasanth:~$ sudo touch /home/demo.txt
 frees@Prasanth:~$
-
+frees@Prasanth:~$ sudo touch /home/demo.txt
+frees@Prasanth:~$ ls
+file.txt  my_folder
+frees@Prasanth:~$ cd /home
+frees@Prasanth:/home$ ls
+demo.txt  frees
+frees@Prasanth:/home$ cd .
+frees@Prasanth:/home$ cd ..
+frees@Prasanth:/$ chmod 764 /home/demo.txt
+chmod: changing permissions of '/home/demo.txt': Operation not permitted
+frees@Prasanth:/$ sudo chmod 764 /home/demo.txt
+frees@Prasanth:/$ ls -l /home/demo.txt
+-rwxrw-r-- 1 root root 0 Jan 29 13:50 /home/demo.txt
+frees@Prasanth:/$
